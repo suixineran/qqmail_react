@@ -38,7 +38,7 @@ class MailMenu extends Component {
             <nav>
                 {
                     menus.map((e, index) =>
-                        <a><Link to={e.url} key={index}>{e.text}</Link></a>
+                        <a><Link to={e.url} key={index}>{e.text}</Link> <span/><span/></a>
 
                     )
                 }
