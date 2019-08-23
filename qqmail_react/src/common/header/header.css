@@ -1,0 +1,79 @@
+body {
+    list-style:none;
+}
+.App-header {
+    margin: 0 auto;
+    background-color: #d6fff8;
+    height: 60px;
+    padding: 0px;
+    color: #080509;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+.App-float {
+    margin: 0  50px  0  0;
+    float: left;
+}
+
+.App-float-right {
+    float: right;
+}
+.clearfix::after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+.App-next {
+    margin: 0 auto;
+    background-color: #f8ffff;
+    height: 800px;
+    padding: 0px;
+    border: 10px solid #86c6d9;
+    color: #080509;
+    overflow: hidden;
+    border-radius: 20px;
+
+}
+.App-next-left {
+    float: left;
+    width: 250px;
+    height: 800px;
+    /*border: 5px solid #a3d9bc;*/
+    border-radius: 10px;
+}
+
+.App-next-right {
+    float: left;
+    width: 1000px;
+    height: 800px;
+    margin-left: 20px;
+
+}
+
+.App-next-left-up {
+    height: 150px;
+    border: 10px solid #86c6d9;
+    border-radius: 5px;
+}
+
+.App-next-left-down {
+    height: 650px;
+    border: 10px solid #86c6d9;
+    border-radius: 5px;
+}
+.App-next-left-up-ul {
+    color: #0055ac;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+
+
+}
+.App-next-left-down-ul {
+    color: #0055ac;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+
+}

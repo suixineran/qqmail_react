@@ -1,0 +1,13 @@
+li {
+    list-style:none;
+}
+.detail-top {
+    margin: 0 auto;
+    background-color: #d6fff8;
+
+    padding: 0px;
+    color: #080509;
+    font-size: 20px;
+    border-bottom: 1px solid #61dafb;
+
+}

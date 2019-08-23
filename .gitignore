@@ -1,0 +1,5 @@
+qqmail_react/node_modules
+qqmail_api/node_modules
+qqmail_api/yarn.lock
+qqmail_react/yarn.lock
+qqmail_react/.DS_Store
