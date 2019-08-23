@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
-import  { Button, Tabs, Form, Iconfont, Dropdown, Menu } from 'antd'
+// import  { Button, Tabs, Form, Iconfont, Dropdown, Menu } from 'antd'
 import 'antd/dist/antd.css'
 import './Detail.css'
-import TodoApi from "../api/mail";
+import TodoApi from "../api/mail"
+import { Link } from 'react-router-dom'
 
 class AddressAdd extends Component {
     constructor(props) {
@@ -33,6 +34,7 @@ class AddressAdd extends Component {
             name: this.state.name,
             mail: this.state.mail,
             phnumber: this.state.phnumber,
+            key: new Date,
         }
         this.api.add(data, (r) => {
             let ts = r
@@ -54,7 +56,8 @@ class AddressAdd extends Component {
         return (
             <div>
                 <button className="ant-btn"  onClick={this.onSubmit} >保存</button>
-                <button className="ant-btn">取消</button>
+                {/*<link to={{pathname: "/addresslist",}}> 取消 </link>*/}
+                <button className="ant-btn"  >取消</button>
                 <br/>
                 <br/>
                 <div>  姓名 <input onChange={this._changeValue } value={name} name='name'   /></div>

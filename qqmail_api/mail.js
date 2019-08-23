@@ -12,29 +12,6 @@ app.use(cors())
 app.use(bodyParser.json())
 
 
-// const loadTodos = () => {
-//     let data = fs.readFileSync('todo.json')
-//     let todos = JSON.parse(data)
-//     return todos
-// }
-
-
-// const saveTodos = (todos) => {
-//     let s = JSON.stringify(todos, null, 2)
-//     fs.writeFileSync('todo.json', s)
-// }
-
-// const todoList = loadTodos()
-
-const loadTodos2 = () => {
-    let data = fs.readFileSync('address.json')
-    let address = JSON.parse(data)
-    return address
-}
-const address = loadTodos2()
-
-
-
 const sendHtml = (path, response) => {
     let options = {
         encoding: 'utf-8',
@@ -58,6 +35,19 @@ const abort = (response, code) => {
     let text = mapper[code]
     response.status(code).send(text)
 }
+
+const loadAddress = () => {
+    let data = fs.readFileSync('address.json')
+    let address = JSON.parse(data)
+    return address
+}
+const address = loadAddress()
+
+
+
+
+
+
 
 const todoAdd = (form) => {
     if (todoList.length === 0) {
@@ -91,7 +81,19 @@ const todoUpdate = (id, form) => {
     }
 }
 
-const todoDelete = (id) => {
+const mailDelete = (id) => {
+    id = Number(id)
+    let index = shoujianxiang.findIndex(e => e.id === id)
+    if (index > -1) {
+        let t = shoujianxiang.splice(index, 1)[0]
+        savemail(t)
+        return t
+    } else {
+        return {}
+    }
+}
+
+const addressDelete = (id) => {
     id = Number(id)
     let index = todoList.findIndex(e => e.id === id)
     if (index > -1) {
@@ -104,20 +106,22 @@ const todoDelete = (id) => {
 }
 
 app.get('/', (request, response) => {
-    console.log('debug 111')
+    // console.log('debug 111')
     let path = 'index.html'
     sendHtml(path, response)
 })
 
 app.get('/api/mail/all', (request, response) => {
-    console.log('todoList in todo', todoList)
+    // console.log('todoList in todo', todoList)
     sendJSON(todoList, response)
 })
 
-app.get('/api/mail/delete/:id', (request, response) => {
+
+app.get('/api/mail/sjxdelete/:id', (request, response) => {
     let id = request.params.id
-    let todo = todoDelete(id)
-    sendJSON(todo, response)
+    let mail = mailDelete(id)
+    console.log('sjxdelet',mail)
+    sendJSON(mail, response)
 })
 
 const todoFetch = (id) => {
@@ -155,18 +159,22 @@ app.get('/api/mail/addresslist', (request, response) => {
     sendJSON(address, response)
 
 })
-const loadTodos1 = () => {
+
+const loadMail = () => {
     let data = fs.readFileSync('shoujianxiang.json')
     let sjx = JSON.parse(data)
     return sjx
 }
-const shoujianxiang = loadTodos1()
+const shoujianxiang = loadMail()
 
 app.get('/api/mail/sjx', (request, response) => {
-    // console.log('shoujianxiang')
-    // console.log('shoujianxiang', shoujianxiang)
     sendJSON(shoujianxiang, response)
 })
+
+const savemail = (mail) => {
+    let s = JSON.stringify(mail, null, 2)
+    fs.writeFileSync('shoujianxiang.json', s)
+}
 const saveaddress = (address) => {
     let s = JSON.stringify(address, null, 2)
     fs.writeFileSync('address.json', s)
@@ -191,6 +199,14 @@ app.post('/api/mail/add', (request, response) => {
     let mail = addressAdd(form)
     sendJSON(mail, response)
 })
+
+
+
+
+
+
+
+
 
 
 const main = () => {

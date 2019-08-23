@@ -12,8 +12,11 @@ class Shoujianxiang extends Component {
         this.state = {
             mails: [],
             data: [],
+            ids:[]
         }
         this.processData = this.processData.bind(this)
+        this.selectedmail = this.selectedmail.bind(this)
+
     }
 
     componentDidMount() {
@@ -45,40 +48,67 @@ class Shoujianxiang extends Component {
 
     }
 
+    selectedmail(record, selected) {
+        let ids = this.state.ids
+        console.log('record', record.id)
+        console.log('selected', selected)
+        if (selected) {
+            ids.push(record.id)
+            this.setState({
+                ids
+            })
+        }
+        if (!selected) {
+            let index = ids.indexOf(record.id)
+            ids.splice(index, 1)
+            this.setState({
+                ids
+            })
+        }
+    }
+
+
+
     render() {
-        let state = this.state
-        console.log('state', state)
-       // let { id, } = this.processData()
-       //  console.log('data--',this.state.data)
+
+        let ids = this.state.ids
+        console.log('idss', ids)
+
         var columns = [{
             title: '发件人',
             dataIndex: 'addresser',
             render: function(text, record, index ) {
-                console.log('record',record)
                 let id = record.id
                 let url = `/sjx/${id}`
                 return (
                     <div>
-                {/*<a href={url}>{text}   </a>*/}
-                        <Link  to={{
-                            pathname: url,
-                        }}
-                        >  {text}  </Link>
+                        <Link  to={{pathname: url,}}> {text} </Link>
                     </div>
                 )
             }
         }, {
             title: '主题',
             dataIndex: 'mailSubject',
-            render: function(text) {
-                return <a href="javascript:;">{text}</a>
-
+            render: function(text, record, index ) {
+                let id = record.id
+                let url = `/sjx/${id}`
+                return (
+                    <div>
+                        <Link  to={{pathname: url,}}> {text} </Link>
+                    </div>
+                )
             }
         }, {
             title: '时间',
             dataIndex: 'time',
-            render: function(text) {
-                return <a href="javascript:;">{text} </a>
+            render: function(text, record, index ) {
+                let id = record.id
+                let url = `/sjx/${id}`
+                return (
+                    <div>
+                        <Link  to={{pathname: url,}}> {text} </Link>
+                    </div>
+                )
             }
         }];
 
@@ -86,8 +116,8 @@ class Shoujianxiang extends Component {
         return (
             <div>
                 <div> 收件箱 </div>
-                <Button/>
-                <List  columns ={columns}  data = {this.state.data} />
+                <Button ids={ids} />
+                <List selectedmail={this.selectedmail}  columns ={columns}  data = {this.state.data} />
             </div>
         )
     }

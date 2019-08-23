@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import  { Button, Tabs,  } from 'antd'
+import  {  Tabs} from 'antd'
 import 'antd/dist/antd.css'
 import '../common/Detail.css'
 import Writebutton from "../common/WriteButton"

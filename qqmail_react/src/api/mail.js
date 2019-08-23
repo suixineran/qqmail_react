@@ -7,13 +7,13 @@ class MailApi extends Api {
         this.post(path, data, callback)
     }
 
-    delete(todoId, callback) {
-        let path = '/delete/' + todoId
+    deletem(Id, callback) {
+        let path = '/sjxdelete/' + Id
         this.get(path, callback)
     }
 
-    update(todoId, data, callback) {
-        let path = '/update/' + todoId
+    update(Id, data, callback) {
+        let path = '/update/' + Id
         this.post(path, data, callback)
     }
 

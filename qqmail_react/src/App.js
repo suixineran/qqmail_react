@@ -15,6 +15,8 @@ import Detail from "./common/Detail"
 import AddressAdd from "./common/AddressAdd"
 import Header1 from "./common/header/Header1"
 // import NextLeft from "./common/header/NextLeft"
+
+// import Header1 from "./common/header/Header1"
 class App extends Component {
     render() {
         return (
@@ -26,20 +28,23 @@ class App extends Component {
                         <div className={"App-next-left"}>
                             <div className={"App-next-left-up"}>
                                 <ul className={'App-next-left-up-ul'}>
-                                    <li>写信</li>
-                                    <li>收信</li>
-                                    <li>通讯录</li>
+                                    <li><a href="/write">写信</a></li>
+                                    <li><a href="/sjx">收信</a></li>
+                                    <li><a href="/addresslist">通讯录</a></li>
+
                                 </ul>
 
                             </div>
                             <div className={"App-next-left-down" }>
 
                                 <ul className={'App-next-left-down-ul'}>
-                                    <li>收件箱</li>
-                                    <li>已发邮件</li>
-                                    <li>垃圾箱</li>
-                                    <li>群邮件</li>
-                                    <li>星级邮件</li>
+                                    <li><a href="/sjx">收件箱</a></li>
+                                    <li><a href="/fjx">已发邮件</a></li>
+                                    <li><a href="/ljx">垃圾箱</a></li>
+                                    <li><a href="javascript:;">群邮件</a></li>
+                                    <li><a href="javascript:;">星级邮件</a></li>
+                                    <li><a href="javascript:;">订阅邮件</a></li>
+
                                 </ul>
 
                             </div>
@@ -59,6 +64,7 @@ class App extends Component {
                                     <Route path="/sjx/:id" component={Detail} />
                                     <Route exact path="/addresslist/add" component={AddressAdd} />
 
+                                    <Route exact path="/sjxdelete/:id" component={Detail} />
                                     <Route exact path="/" component={Home} />
 
                                 </div>

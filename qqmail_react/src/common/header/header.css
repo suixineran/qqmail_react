@@ -55,6 +55,7 @@ body {
     height: 150px;
     border: 10px solid #86c6d9;
     border-radius: 5px;
+    text-align: center;
 }
 
 .App-next-left-down {
@@ -64,9 +65,8 @@ body {
 }
 .App-next-left-up-ul {
     color: #0055ac;
-    text-align: center;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 22px;
 
 
 }

@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
-import  { Button, Tabs, Form, Iconfont } from 'antd'
+// import  { Button, Tabs, Form, Iconfont } from 'antd'
 import 'antd/dist/antd.css'
 import './Detail.css'
 
 class Writebutton extends Component {
 
     render() {
-        function handleSelectChange(value) {
-            console.log('selected ' + value);
-        }
+        // function handleSelectChange(value) {
+        //     console.log('selected ' + value);
+        // }
 
         return (
             <div>
