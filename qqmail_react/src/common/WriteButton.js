@@ -36,9 +36,9 @@ class Writebutton extends Component {
 
         let data = {
             addresser: this.state.addresser,
-            sendingAddress: `<${this.state.sendingAddress}@.mail.com>`,
+            sendingAddress: `<${this.state.addresser}@mail.com>`,
             mailSubject: this.state.mailSubject,
-            id: new Date,
+            id: Number(new Date),
             time:new Date,
             done: false,
             type: "yifu",
@@ -83,13 +83,12 @@ class Writebutton extends Component {
 
         return (
             <div>
-                {/*<MailMenu />*/}
                 <Link  to={{
                     pathname: url,
                 }}
-                >   <button className="ant-btn" onClick={this.onSubmit}>发送</button></Link>
+                >   <button className="ant-btn" onClick={this.onSubmit}>发送</button> </Link>
 
-                {/*<button className="ant-btn" onClick={this.submit}>发送</button>*/}
+
                 <button className="ant-btn">定时发送</button>
                 <button className="ant-btn">存稿</button>
                 <button className="ant-btn">关闭</button>

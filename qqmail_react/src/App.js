@@ -9,7 +9,9 @@ import Shoujianxiang from "./page/Shoujianxiang"
 import Lajixiang from "./page/Lajixiang"
 import Detail from "./common/Detail"
 import AddressAdd from "./common/AddressAdd"
-import Writeyifa from "./common/Writeyifa"
+import Succe from "./common/Succe"
+import AddressUpdate from "./common/AddressUpdate"
+
 
 import Header1 from "./common/header/Header1"
 // import NextLeft from "./common/header/NextLeft"
@@ -23,48 +25,30 @@ class App extends Component {
 
                 <div>
                     <div className={"App-next"}>
-                        {/*<div className={"App-next-left"}>*/}
-                        {/*    <div className={"App-next-left-up"}>*/}
-                        {/*        <ul className={'App-next-left-up-ul'}>*/}
-                        {/*            <li><a href="/write">写信</a></li>*/}
-                        {/*            <li><a href="/sjx">收信</a></li>*/}
-                        {/*            <li><a href="/addresslist">通讯录</a></li>*/}
-                        {/*        </ul>*/}
-                        {/*    </div>*/}
 
-                        {/*    <div className={"App-next-left-down" }>*/}
-
-                        {/*        <ul className={'App-next-left-down-ul'}>*/}
-                        {/*            <li><a href="/sjx" key='down01'>收件箱</a></li>*/}
-                        {/*            <li><a href="/fjx" key='down02'>已发邮件</a></li>*/}
-                        {/*            <li><a href="/ljx" key='down03'>垃圾箱</a></li>*/}
-                        {/*            <li><a href="javascript:;"  key='down05'>群邮件 (2)</a></li>*/}
-                        {/*            <li><a href="javascript:;" key='down06'>群邮件 (2)</a></li>*/}
-                        {/*            <li><a href="javascript:;" key='down07'>群邮件 (2)</a></li>*/}
-                        {/*            <li><a href="javascript:;" key='down08'>群邮件 (2)</a></li>*/}
-                        {/*        </ul>*/}
-
-                        {/*    </div>*/}
-
-                        {/*</div>*/}
                         <div className={"App-next-right"}>
                             {/*下面的是注册路由的部分，显示什么内容 还需要看访问的具体路径*/}
-
 
                             <Router>
                                 <div>
                                     <Route exact path="/" component={Home} />
                                     <Route exact path="/hello" component={Hello} />
+                                    <Route exact path="/sjx" component={Shoujianxiang} />
                                     <Route exact path="/write" component={Write} />
                                     <Route exact path="/fjx" component={Fajianxiang} />
-                                    <Route exact path="/sjx" component={Shoujianxiang} />
                                     <Route exact path="/ljx" component={Lajixiang} />
                                     <Route exact path="/addresslist" component={AddressList} />
 
-                                    <Route exact path="/addresslist/add" component={AddressAdd} />
-                                    <Route exact path="/addmail" component={Writeyifa} />
-                                    <Route path="/sjxdelete/:id" component={Detail} />
+                                    <Route exact path="/addmail" component={Succe} />
                                     <Route path="/sjx/:id" component={Detail} />
+                                    <Route path="/sjxdelete/:id" component={Detail} />
+                                    <Route path="/delete/:id'" component={Detail} />
+
+                                    <Route exact path="/addresslist/add" component={AddressAdd} />
+                                    <Route  path="/addresslist/updata/:id" component={AddressUpdate} />
+                                    <Route  path="/addresslist/delete/:id" component={AddressAdd} />
+
+                                    <Route exact path="/succe" component={Succe} />
 
                                 </div>
                             </Router>

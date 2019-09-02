@@ -2,27 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08c4a561-2bd2-4758-b7d4-3a2f887d65e0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/qqmail_api/mails.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/qqmail_api/address.json" beforeDir="false" afterPath="$PROJECT_DIR$/qqmail_api/address.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/qqmail_api/mail.js" beforeDir="false" afterPath="$PROJECT_DIR$/qqmail_api/mail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qqmail_api/shoujianxiang.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/qqmail_api/mails.json" beforeDir="false" afterPath="$PROJECT_DIR$/qqmail_api/mails.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/qqmail_react/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/qqmail_react/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/qqmail_react/src/api/mail.js" beforeDir="false" afterPath="$PROJECT_DIR$/qqmail_react/src/api/mail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/qqmail_react/src/common/AddressAdd.js" beforeDir="false" afterPath="$PROJECT_DIR$/qqmail_react/src/common/AddressAdd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qqmail_react/src/common/Buttons.js" beforeDir="false" afterPath="$PROJECT_DIR$/qqmail_react/src/common/TopButtons.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qqmail_react/src/common/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/qqmail_react/src/common/Home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/qqmail_react/src/common/List.js" beforeDir="false" afterPath="$PROJECT_DIR$/qqmail_react/src/common/List.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qqmail_react/src/common/MailMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/qqmail_react/src/common/MailMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qqmail_react/src/common/TopButtons.js" beforeDir="false" afterPath="$PROJECT_DIR$/qqmail_react/src/common/TopButtons.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/qqmail_react/src/common/WriteButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/qqmail_react/src/common/WriteButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qqmail_react/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/qqmail_react/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qqmail_react/src/common/Writeyifa.js" beforeDir="false" afterPath="$PROJECT_DIR$/qqmail_react/src/common/Succe.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/qqmail_react/src/page/AddressList.js" beforeDir="false" afterPath="$PROJECT_DIR$/qqmail_react/src/page/AddressList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/qqmail_react/src/page/Fajianxiang.js" beforeDir="false" afterPath="$PROJECT_DIR$/qqmail_react/src/page/Fajianxiang.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qqmail_react/src/page/Hello.js" beforeDir="false" afterPath="$PROJECT_DIR$/qqmail_react/src/page/Hello.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/qqmail_react/src/page/Lajixiang.js" beforeDir="false" afterPath="$PROJECT_DIR$/qqmail_react/src/page/Lajixiang.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qqmail_react/src/page/Shoujianxiang.js" beforeDir="false" afterPath="$PROJECT_DIR$/qqmail_react/src/page/Shoujianxiang.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qqmail_react/src/page/Shouye.js" beforeDir="false" afterPath="$PROJECT_DIR$/qqmail_react/src/page/Hello.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qqmail_react/src/page/Write.js" beforeDir="false" afterPath="$PROJECT_DIR$/qqmail_react/src/page/Write.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qqmail_react/src/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/qqmail_react/src/utils.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +42,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../react/jianshu" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../fuxi/kejian/fe13/fe上课板书19" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -131,7 +125,7 @@
       <workItem from="1566857109880" duration="522000" />
       <workItem from="1566896315183" duration="3208000" />
       <workItem from="1567339666458" duration="4722000" />
-      <workItem from="1567374740176" duration="30520000" />
+      <workItem from="1567374740176" duration="51046000" />
     </task>
     <servers />
   </component>

@@ -70,16 +70,6 @@
     "type": "shoujianxiang"
   },
   {
-    "id": 100811,
-    "addresser": "光头强",
-    "sendingAddress": "1564567712447@126.com",
-    "mailSubject": "光头强的电影yifu",
-    "mailcontent": "还记得当天旅馆的门牌\n还留住笑着离开的神态\n当天整个城市 那样轻快\n沿路一起走半里长街\n\n还记得街灯照出一脸黄\n还燃亮那份微温的便当\n剪影的你轮廓 太好看\n凝住眼泪才敢细看\n\n忘掉天地 仿佛也想不起自己\n仍未忘相约看漫天黄叶远飞\n就算会与你分离 凄绝的戏\n要决心忘记 我便记不起\n\n明日天地 只恐怕认不出自己\n仍未忘跟你约定假如没有死\n就算你壮阔胸膛 不敌天气\n两鬓斑白 都可认得你\n\n还记得当天结他的和弦\n还明白每段旋律的伏线\n当天街角流过你声线\n沿路旅程如歌褪变",
-    "time": "8-19 10:20",
-    "done": false,
-    "type": "yifu"
-  },
-  {
     "id": 100822,
     "addresser": "光头强",
     "sendingAddress": "1564567712447@126.com",
@@ -111,16 +101,6 @@
   },
   {
     "id": 100855,
-    "addresser": "光头强",
-    "sendingAddress": "1564567712447@126.com",
-    "mailSubject": "光头强的电影yifu",
-    "mailcontent": "还记得当天旅馆的门牌\n还留住笑着离开的神态\n当天整个城市 那样轻快\n沿路一起走半里长街\n\n还记得街灯照出一脸黄\n还燃亮那份微温的便当\n剪影的你轮廓 太好看\n凝住眼泪才敢细看\n\n忘掉天地 仿佛也想不起自己\n仍未忘相约看漫天黄叶远飞\n就算会与你分离 凄绝的戏\n要决心忘记 我便记不起\n\n明日天地 只恐怕认不出自己\n仍未忘跟你约定假如没有死\n就算你壮阔胸膛 不敌天气\n两鬓斑白 都可认得你\n\n还记得当天结他的和弦\n还明白每段旋律的伏线\n当天街角流过你声线\n沿路旅程如歌褪变",
-    "time": "8-19 10:20",
-    "done": false,
-    "type": "yifu"
-  },
-  {
-    "id": 100866,
     "addresser": "光头强",
     "sendingAddress": "1564567712447@126.com",
     "mailSubject": "光头强的电影yifu",
@@ -180,299 +160,20 @@
     "type": "shanchu"
   },
   {
-    "addresser": "addMail",
-    "sendingAddress": "",
-    "mailSubject": "addMailaddMailaddMailaddMail",
-    "id": "2019-09-02T06:02:00.418Z",
-    "time": "2019-09-02T06:02:00.418Z",
+    "addresser": "郝建",
+    "sendingAddress": "<郝建@mail.com>",
+    "mailSubject": "郝建郝建",
+    "id": 1567420503636,
+    "time": "2019-09-02T10:35:03.636Z",
     "done": false,
-    "type": "yifu"
+    "type": "shanchu"
   },
   {
-    "addresser": "",
-    "sendingAddress": "",
-    "mailSubject": "",
-    "id": "2019-09-02T06:03:05.712Z",
-    "time": "2019-09-02T06:03:05.712Z",
-    "done": false,
-    "type": "yifu"
-  },
-  {
-    "addresser": "",
-    "sendingAddress": "<@.mail.com>",
-    "mailSubject": "",
-    "id": "2019-09-02T06:06:44.025Z",
-    "time": "2019-09-02T06:06:44.025Z",
-    "done": false,
-    "type": "yifu"
-  },
-  {
-    "addresser": "",
-    "sendingAddress": "<@.mail.com>",
-    "mailSubject": "",
-    "id": "2019-09-02T06:10:00.628Z",
-    "time": "2019-09-02T06:10:00.628Z",
-    "done": false,
-    "type": "yifu"
-  },
-  {
-    "addresser": "",
-    "sendingAddress": "<@.mail.com>",
-    "mailSubject": "",
-    "id": "2019-09-02T06:10:28.081Z",
-    "time": "2019-09-02T06:10:28.081Z",
-    "done": false,
-    "type": "yifu"
-  },
-  {
-    "addresser": "",
-    "sendingAddress": "<@.mail.com>",
-    "mailSubject": "",
-    "id": "2019-09-02T06:10:58.231Z",
-    "time": "2019-09-02T06:10:58.231Z",
-    "done": false,
-    "type": "yifu"
-  },
-  {
-    "addresser": "",
-    "sendingAddress": "<@.mail.com>",
-    "mailSubject": "",
-    "id": "2019-09-02T06:12:39.133Z",
-    "time": "2019-09-02T06:12:39.133Z",
-    "done": false,
-    "type": "yifu"
-  },
-  {
-    "addresser": "",
-    "sendingAddress": "<@.mail.com>",
-    "mailSubject": "111",
-    "id": "2019-09-02T06:13:47.048Z",
-    "time": "2019-09-02T06:13:47.048Z",
-    "done": false,
-    "type": "yifu"
-  },
-  {
-    "addresser": "",
-    "sendingAddress": "<@.mail.com>",
-    "mailSubject": "11",
-    "id": "2019-09-02T06:14:17.879Z",
-    "time": "2019-09-02T06:14:17.879Z",
-    "done": false,
-    "type": "yifu"
-  },
-  {
-    "addresser": "",
-    "sendingAddress": "<@.mail.com>",
-    "mailSubject": "11",
-    "id": "2019-09-02T06:15:57.961Z",
-    "time": "2019-09-02T06:15:57.961Z",
-    "done": false,
-    "type": "yifu"
-  },
-  {
-    "addresser": "1",
-    "sendingAddress": "<@.mail.com>",
-    "mailSubject": "11",
-    "id": "2019-09-02T06:16:42.034Z",
-    "time": "2019-09-02T06:16:42.034Z",
-    "done": false,
-    "type": "yifu"
-  },
-  {
-    "addresser": "",
-    "sendingAddress": "<@.mail.com>",
-    "mailSubject": "",
-    "id": "2019-09-02T06:17:17.834Z",
-    "time": "2019-09-02T06:17:17.834Z",
-    "done": false,
-    "type": "yifu"
-  },
-  {
-    "addresser": "",
-    "sendingAddress": "<@.mail.com>",
-    "mailSubject": "",
-    "id": "2019-09-02T06:22:36.162Z",
-    "time": "2019-09-02T06:22:36.162Z",
-    "done": false,
-    "type": "yifu"
-  },
-  {
-    "addresser": "",
-    "sendingAddress": "<@.mail.com>",
-    "mailSubject": "",
-    "id": "2019-09-02T06:23:18.195Z",
-    "time": "2019-09-02T06:23:18.195Z",
-    "done": false,
-    "type": "yifu"
-  },
-  {
-    "addresser": "",
-    "sendingAddress": "<@.mail.com>",
-    "mailSubject": "",
-    "id": "2019-09-02T06:23:19.736Z",
-    "time": "2019-09-02T06:23:19.736Z",
-    "done": false,
-    "type": "yifu"
-  },
-  {
-    "addresser": "",
-    "sendingAddress": "<@.mail.com>",
-    "mailSubject": "",
-    "id": "2019-09-02T06:23:25.671Z",
-    "time": "2019-09-02T06:23:25.671Z",
-    "done": false,
-    "type": "yifu"
-  },
-  {
-    "addresser": "11",
-    "sendingAddress": "<@.mail.com>",
-    "mailSubject": "1111",
-    "id": "2019-09-02T06:23:37.928Z",
-    "time": "2019-09-02T06:23:37.928Z",
-    "done": false,
-    "type": "yifu"
-  },
-  {
-    "addresser": "",
-    "sendingAddress": "<@.mail.com>",
-    "mailSubject": "",
-    "id": "2019-09-02T06:29:29.515Z",
-    "time": "2019-09-02T06:29:29.515Z",
-    "done": false,
-    "type": "yifu"
-  },
-  {
-    "addresser": "",
-    "sendingAddress": "<@.mail.com>",
-    "mailSubject": "",
-    "id": "2019-09-02T06:29:32.451Z",
-    "time": "2019-09-02T06:29:32.451Z",
-    "done": false,
-    "type": "yifu"
-  },
-  {
-    "addresser": "",
-    "sendingAddress": "<@.mail.com>",
-    "mailSubject": "",
-    "id": "2019-09-02T06:29:32.626Z",
-    "time": "2019-09-02T06:29:32.626Z",
-    "done": false,
-    "type": "yifu"
-  },
-  {
-    "addresser": "",
-    "sendingAddress": "<@.mail.com>",
-    "mailSubject": "",
-    "id": "2019-09-02T06:29:32.801Z",
-    "time": "2019-09-02T06:29:32.801Z",
-    "done": false,
-    "type": "yifu"
-  },
-  {
-    "addresser": "",
-    "sendingAddress": "<@.mail.com>",
-    "mailSubject": "",
-    "id": "2019-09-02T06:29:32.967Z",
-    "time": "2019-09-02T06:29:32.967Z",
-    "done": false,
-    "type": "yifu"
-  },
-  {
-    "addresser": "",
-    "sendingAddress": "<@.mail.com>",
-    "mailSubject": "",
-    "id": "2019-09-02T06:29:34.323Z",
-    "time": "2019-09-02T06:29:34.323Z",
-    "done": false,
-    "type": "yifu"
-  },
-  {
-    "addresser": "",
-    "sendingAddress": "<@.mail.com>",
-    "mailSubject": "",
-    "id": "2019-09-02T06:29:34.513Z",
-    "time": "2019-09-02T06:29:34.513Z",
-    "done": false,
-    "type": "yifu"
-  },
-  {
-    "addresser": "",
-    "sendingAddress": "<@.mail.com>",
-    "mailSubject": "",
-    "id": "2019-09-02T06:29:34.688Z",
-    "time": "2019-09-02T06:29:34.688Z",
-    "done": false,
-    "type": "yifu"
-  },
-  {
-    "addresser": "",
-    "sendingAddress": "<@.mail.com>",
-    "mailSubject": "",
-    "id": "2019-09-02T06:29:34.945Z",
-    "time": "2019-09-02T06:29:34.945Z",
-    "done": false,
-    "type": "yifu"
-  },
-  {
-    "addresser": "",
-    "sendingAddress": "<@.mail.com>",
-    "mailSubject": "",
-    "id": "2019-09-02T06:30:15.269Z",
-    "time": "2019-09-02T06:30:15.269Z",
-    "done": false,
-    "type": "yifu"
-  },
-  {
-    "addresser": "",
-    "sendingAddress": "<@.mail.com>",
-    "mailSubject": "",
-    "id": "2019-09-02T06:32:27.650Z",
-    "time": "2019-09-02T06:32:27.650Z",
-    "done": false,
-    "type": "yifu"
-  },
-  {
-    "addresser": "",
-    "sendingAddress": "<@.mail.com>",
-    "mailSubject": "",
-    "id": "2019-09-02T06:32:29.816Z",
-    "time": "2019-09-02T06:32:29.816Z",
-    "done": false,
-    "type": "yifu"
-  },
-  {
-    "addresser": "",
-    "sendingAddress": "<@.mail.com>",
-    "mailSubject": "",
-    "id": "2019-09-02T06:32:35.306Z",
-    "time": "2019-09-02T06:32:35.306Z",
-    "done": false,
-    "type": "yifu"
-  },
-  {
-    "addresser": "333",
-    "sendingAddress": "<@.mail.com>",
-    "mailSubject": "33333",
-    "id": "2019-09-02T06:34:05.304Z",
-    "time": "2019-09-02T06:34:05.304Z",
-    "done": false,
-    "type": "yifu"
-  },
-  {
-    "addresser": "11",
-    "sendingAddress": "<@.mail.com>",
-    "mailSubject": "222",
-    "id": "2019-09-02T07:53:48.085Z",
-    "time": "2019-09-02T07:53:48.085Z",
-    "done": false,
-    "type": "yifu"
-  },
-  {
-    "addresser": "",
-    "sendingAddress": "<@.mail.com>",
-    "mailSubject": "",
-    "id": "2019-09-02T07:53:57.126Z",
-    "time": "2019-09-02T07:53:57.126Z",
+    "addresser": "222",
+    "sendingAddress": "<222@mail.com>",
+    "mailSubject": "22222",
+    "id": 1567434642778,
+    "time": "2019-09-02T14:30:42.778Z",
     "done": false,
     "type": "yifu"
   }

@@ -17,13 +17,14 @@ class List extends Component {
 
         let columns = this.props.columns
         let data = this.props.data
-        // console.log('data', data)
+        console.log('data', this.props)
         let selectedmail = this.props.selectedmail
+
         var rowSelection = {
             onSelect: function(record, selected, selectedRows) {
                 console.log('record', record.id)
                 console.log('selected', selected)
-                // selectedmail(record, selected)
+                selectedmail(record, selected)
             },
             onSelectAll: function(selected, selectedRows) {
                 console.log('selected', selected);

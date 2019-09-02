@@ -34,7 +34,7 @@ class AddressAdd extends Component {
             name: this.state.name,
             mail: this.state.mail,
             phnumber: this.state.phnumber,
-            key: new Date,
+            key: Number(new Date),
         }
         this.api.addAdd(data, (r) => {
             let ts = r
@@ -51,17 +51,17 @@ class AddressAdd extends Component {
 
 
     render() {
-        // console.log('-------', this.state)
+        // console.log('-------', this.props.location)
         let { name, mail, phnumber } = this.state;
-        let url = "/addresslist"
+
+
+        let url3 = "/addresslist"
+
         return (
             <div>
                 <button className="ant-btn"  onClick={this.onSubmit} >保存</button>
 
-                <Link  to={{
-                    pathname: url,
-                } }
-                >  <button className="ant-btn" role="button">返回</button></Link>
+                <Link  to={{pathname: url3,  } }>  <button className="ant-btn" role="button">返回</button></Link>
 
                 <br/>
                 <br/>

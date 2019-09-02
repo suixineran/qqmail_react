@@ -12,8 +12,7 @@ class Fajianxiang extends Component {
         this.api = new TodoApi()
         this.state = {
             mails: [],
-            data: [],
-            ids:[]
+            ids:[],
         }
         this.selectedmail = this.selectedmail.bind(this)
 
@@ -32,6 +31,7 @@ class Fajianxiang extends Component {
     selectedmail(record, selected) {
         let ids = this.state.ids
         // console.log('record', record.id)
+        // console.log('record', record.id)
         // console.log('selected', selected)
         if (selected) {
             ids.push(record.id)
@@ -39,16 +39,17 @@ class Fajianxiang extends Component {
                 ids
             })
         }
-        if (!selected) {
-            let index = ids.indexOf(record.id)
-            ids.splice(index, 1)
-            this.setState({
-                ids
-            })
-        }
+        // if (!selected) {
+        //     let index = ids.indexOf(record.id)
+        //     ids.splice(index, 1)
+        //     this.setState({
+        //         ids
+        //     })
+        // }
     }
 
     render() {
+        // console.log('准备渲染的ids', this.state.ids)
         let mails = this.state.mails
         var columns = [
             {
@@ -95,11 +96,13 @@ class Fajianxiang extends Component {
         return (
             <div>
                 <MailMenu />
-                <div> 发件箱 </div>
+                <h1> 已发邮件 </h1>
                 <TopButton ids={this.state.ids} />
 
-                <List selectedmail={this.selectedmail}  columns={columns}
-                      data={mails.filter(e => e.type === "yifu")}
+                <List
+                    selectedmail={this.selectedmail}
+                    columns={columns}
+                    data={mails.filter(e => e.type === "yifu")}
                 />
             </div>
         )

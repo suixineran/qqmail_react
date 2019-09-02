@@ -38,13 +38,13 @@ class Lajixiang extends Component {
                 ids
             })
         }
-        if (!selected) {
-            let index = ids.indexOf(record.id)
-            ids.splice(index, 1)
-            this.setState({
-                ids
-            })
-        }
+        // if (!selected) {
+        //     let index = ids.indexOf(record.id)
+        //     ids.splice(index, 1)
+        //     this.setState({
+        //         ids
+        //     })
+        // }
     }
 
 
@@ -97,7 +97,7 @@ class Lajixiang extends Component {
             <div>
                 <MailMenu />
 
-                <div> 收件箱 </div>
+                <h1> 垃圾邮件 </h1>
                 <TopButton ids={this.state.ids} />
                 {/*<TopButton  />*/}
                 <List selectedmail={this.selectedmail}  columns={columns}

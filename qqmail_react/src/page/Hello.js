@@ -8,9 +8,9 @@ class Hello extends Component {
         return (
             <div>
                 <MailMenu />
-                <div>HELLO,随心而安。欢迎回来！</div>
-                <div>注册英文邮箱帐号 (如：chen@foxmail.com)</div>
-                <div>收件箱(364)群邮件(18)订阅中心(25)</div>
+                <h2>HELLO,随心而安。欢迎回来！</h2>
+                <h3>注册英文邮箱帐号 (如：chen@foxmail.com)</h3>
+                <h3>收件箱(364)群邮件(18)订阅中心(25)</h3>
             </div>
         )
     }
