@@ -1,21 +1,23 @@
-const ajax = function(method, path, data, callback) {
-    let r = new XMLHttpRequest()
-    r.open(method, path, true)
-    r.setRequestHeader('Content-Type', 'application/json')
-    r.onreadystatechange = () => {
-        if (r.readyState === 4) {
-            callback(r.response)
-        }
-    }
-    if (method === 'POST') {
-        data = JSON.stringify(data)
-    }
-    r.send(data)
-}
 
 const log = console.log.bind(console)
 
-export {
-    ajax,
-    log
+
+
+
+
+// export {
+//
+//     log
+// }
+
+var formatDate = function(d) {
+    var now = new Date(d);
+    var year = now.getFullYear();
+    var month = now.getMonth() + 1;
+    var date = now.getDate();
+    var hour = now.getHours();
+    var minute = now.getMinutes();
+    var second = now.getSeconds();
+    return year + "-" + month + "-" + date + " " + hour + ":" + minute;
 }
+log(formatDate(new Date))

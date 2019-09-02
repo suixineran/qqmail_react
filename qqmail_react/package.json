@@ -2,6 +2,7 @@
   "name": "react2",
   "version": "0.1.0",
   "private": true,
+    "homepage":".",
   "dependencies": {
     "antd": "^3.22.0",
     "dva-cli": "^0.10.1",

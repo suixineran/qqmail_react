@@ -60,9 +60,9 @@ class AddressUpdate extends Component {
         let index = data.findIndex(e => e.id === ids[0])
         console.log("父级",index, data[index] )
 
-        // let name1 = data[index].name
-        // let mail1 = data[index].mail
-        // let phnumber1 = data[index].phnumber
+        let name1 = data[index].name
+        let mail1 = data[index].mail
+        let phnumber1 = data[index].phnumber
 
         let { name, mail, phnumber } = this.state
         console.log("gengxin",name, mail, phnumber )
@@ -80,13 +80,13 @@ class AddressUpdate extends Component {
                 <br/>
 
                 <div>  姓名 <input onChange={this._changeValue } value={name} name='name'
-                                 // placeholder= {`${name1}`}
+                                 placeholder= {`${name1}`}
                 /></div>
                 <div>  邮箱 <input onChange={this._changeValue}  value={mail} name='mail'
-                                 // placeholder={`${mail1}`}
+                                 placeholder={`${mail1}`}
                 /></div>
                 <div>  电话 <input  onChange={this._changeValue} value={phnumber} name='phnumber'
-                                  // placeholder={`${phnumber1}`}
+                                  placeholder={`${phnumber1}`}
                 /></div>
 
 

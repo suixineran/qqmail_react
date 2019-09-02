@@ -51,6 +51,19 @@ class Fajianxiang extends Component {
     render() {
         // console.log('准备渲染的ids', this.state.ids)
         let mails = this.state.mails
+        let mail1 = mails.filter(e => e.type === "yifu")
+        function compareDescSort(property){
+            return function(a,b){
+                var value1 = a[property];
+                var value2 = b[property];
+                return  value2 - value1;
+            }
+        }
+
+        let mail2 = mail1.sort(compareDescSort("id"))
+
+
+
         var columns = [
             {
                 title: '收件人',
@@ -102,7 +115,7 @@ class Fajianxiang extends Component {
                 <List
                     selectedmail={this.selectedmail}
                     columns={columns}
-                    data={mails.filter(e => e.type === "yifu")}
+                    data={mail2}
                 />
             </div>
         )

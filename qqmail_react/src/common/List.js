@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import  { Table } from 'antd'
+import  { Table, Pagination } from 'antd'
 
 
 
@@ -34,7 +34,7 @@ class List extends Component {
 
         var pagination = {
             total: data.length,
-            current: 2,
+            // current: 2,
             showSizeChanger: true
         };
 

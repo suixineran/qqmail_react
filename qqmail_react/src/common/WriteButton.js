@@ -34,14 +34,32 @@ class Writebutton extends Component {
         e.preventDefault()
         // console.log('写信提交', this.state)
 
+
+        let  now = new Date
+
+        var formatDate = function(d) {
+            var now = new Date(d);
+            var year = now.getFullYear();
+            var month = now.getMonth() + 1;
+            var date = now.getDate();
+            var hour = now.getHours();
+            var minute = now.getMinutes();
+            var second = now.getSeconds();
+            return year + "-" + month + "-" + date + " " + hour + ":" + minute;
+        }
+
+
+
+
         let data = {
-            addresser: this.state.addresser,
-            sendingAddress: `<${this.state.addresser}@mail.com>`,
-            mailSubject: this.state.mailSubject,
-            id: Number(new Date),
-            time:new Date,
-            done: false,
-            type: "yifu",
+            addresser:  this.state.addresser,
+            sendingAddress:  `<${this.state.addresser}@mail.com>`,
+            mailSubject:  this.state.mailSubject,
+            mailcontent: this.state.mailcontent,
+            id:  Number(new Date),
+            time: formatDate(new Date),
+            done:  false,
+            type:  "yifu",
         }
         this.api.addMail(data, (r) => {
             // console.log('是否包含data.values',data, )
