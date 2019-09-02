@@ -27,14 +27,7 @@ const sendJSON = (data, response) => {
     response.send(r)
 }
 
-const abort = (response, code) => {
-    let mapper = {
-        400: 'Bad Request',
-        404: 'Not Found',
-    }
-    let text = mapper[code]
-    response.status(code).send(text)
-}
+
 
 const loadAddress = () => {
     let data = fs.readFileSync('address.json')
@@ -43,27 +36,6 @@ const loadAddress = () => {
 }
 const address = loadAddress()
 
-
-
-
-
-
-
-const todoAdd = (form) => {
-    if (todoList.length === 0) {
-        form.id = 1
-    } else {
-        let tail = todoList[todoList.length - 1]
-        form.id = tail.id + 1
-    }
-    let now = Date.now()
-    form.createdTime = now
-    form.updatedTime = now
-    form.done = false
-    todoList.push(form)
-    saveTodos(todoList)
-    return form
-}
 
 const todoUpdate = (id, form) => {
     id = Number(id)
@@ -83,9 +55,9 @@ const todoUpdate = (id, form) => {
 
 const mailDelete = (id) => {
     id = Number(id)
-    let index = shoujianxiang.findIndex(e => e.id === id)
+    let index = mails.findIndex(e => e.id === id)
     if (index > -1) {
-        let t = shoujianxiang.splice(index, 1)[0]
+        let t = mails.splice(index, 1)[0]
         savemail(t)
         return t
     } else {
@@ -136,7 +108,7 @@ const todoFetch = (id) => {
 
 const todoFetch1 = (id) => {
     id = Number(id)
-    let mail = shoujianxiang.find(e => e.id === id)
+    let mail = mails.find(e => e.id === id)
     if (mail === undefined) {
         return {}
     } else {
@@ -161,20 +133,18 @@ app.get('/api/mail/addresslist', (request, response) => {
 })
 
 const loadMail = () => {
-    let data = fs.readFileSync('shoujianxiang.json')
+    let data = fs.readFileSync('mails.json')
     let sjx = JSON.parse(data)
     return sjx
 }
-const shoujianxiang = loadMail()
+const mails = loadMail()
 
 app.get('/api/mail/sjx', (request, response) => {
-    sendJSON(shoujianxiang, response)
+    log('邮件信息',mails)
+    sendJSON(mails, response)
 })
 
-const savemail = (mail) => {
-    let s = JSON.stringify(mail, null, 2)
-    fs.writeFileSync('shoujianxiang.json', s)
-}
+
 const saveaddress = (address) => {
     let s = JSON.stringify(address, null, 2)
     fs.writeFileSync('address.json', s)
@@ -192,8 +162,7 @@ const addressAdd = (form) => {
     return form
 }
 
-
-app.post('/api/mail/add', (request, response) => {
+app.post('/api/mail/addresslist/add', (request, response) => {
     let form = request.body
     console.log('form in add', form)
     let mail = addressAdd(form)
@@ -201,10 +170,28 @@ app.post('/api/mail/add', (request, response) => {
 })
 
 
-
-
-
-
+const savemail = (mail) => {
+    let s = JSON.stringify(mail, null, 2)
+    fs.writeFileSync('mails.json', s)
+}
+const mailAdd = (form) => {
+    // if (address.length === 0) {
+    //     form.id = 1
+    // } else {
+    //     let tail = address[address.length - 1]
+    //     form.id = tail.id + 1
+    // }
+    // form.done = false
+    mails.push(form)
+    savemail(mails)
+    return form
+}
+app.post('/api/mail/addmail', (request, response) => {
+    let form = request.body
+    console.log('form in add', form)
+    let mail = mailAdd(form)
+    sendJSON(mail, response)
+})
 
 
 

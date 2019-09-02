@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
 import TodoApi from "../api/mail"
 import List from "../common/List"
-// import Button from "../common/Buttons";
+// import Button from "../common/TopButtons";
 import {Link} from "react-router-dom";
+import MailMenu from "../common/MailMenu";
+const log = console.log.bind(console)
 
 class AddressList extends Component {
     constructor(props) {
@@ -14,7 +16,7 @@ class AddressList extends Component {
     }
     componentDidMount() {
         this.api.addresslist((r) => {
-            console.log('address',r)
+            // console.log('address',r)
             let date = r
             this.setState({
                 data:date,
@@ -37,6 +39,7 @@ class AddressList extends Component {
 
         return (
             <div>
+                <MailMenu />
                 <div> 通讯簿 </div>
                 <Link  to={{
                     pathname: url,

@@ -20,7 +20,7 @@ class AddressAdd extends Component {
     }
 
     _changeValue(e) {
-        console.log('change11',e.target.name, e.target.value)
+        // console.log('change11',e.target.name, e.target.value)
         this.setState({
             [e.target.name]: e.target.value
         })
@@ -28,7 +28,7 @@ class AddressAdd extends Component {
 
     onSubmit(e) {
         e.preventDefault()
-        console.log('onSubmitonSubmit', this.state)
+        // console.log('onSubmitonSubmit', this.state)
 
         let data = {
             name: this.state.name,
@@ -36,7 +36,7 @@ class AddressAdd extends Component {
             phnumber: this.state.phnumber,
             key: new Date,
         }
-        this.api.add(data, (r) => {
+        this.api.addAdd(data, (r) => {
             let ts = r
             console.log('message', ts)
             this.setState({
@@ -51,22 +51,24 @@ class AddressAdd extends Component {
 
 
     render() {
-        console.log('-------', this.state)
+        // console.log('-------', this.state)
         let { name, mail, phnumber } = this.state;
+        let url = "/addresslist"
         return (
             <div>
                 <button className="ant-btn"  onClick={this.onSubmit} >保存</button>
-                {/*<link to={{pathname: "/addresslist",}}> 取消 </link>*/}
-                <button className="ant-btn"  >取消</button>
+
+                <Link  to={{
+                    pathname: url,
+                } }
+                >  <button className="ant-btn" role="button">返回</button></Link>
+
                 <br/>
                 <br/>
-                <div>  姓名 <input onChange={this._changeValue } value={name} name='name'   /></div>
+                <div>  姓名 <input onChange={this._changeValue } value={name} name='name' /></div>
                 <div>  邮箱 <input onChange={this._changeValue}  value={mail} name='mail' /></div>
                 <div>  电话 <input  onChange={this._changeValue} value={phnumber} name='phnumber' /></div>
 
-                {/*<div>  姓名 <input onChange={this._changeValue }  name='name'   /></div>*/}
-                {/*<div>  邮箱 <input onChange={this._changeValue}  name='mail' /></div>*/}
-                {/*<div>  电话 <input  onChange={this._changeValue} name='phnumber' /></div>*/}
 
             </div>
         )

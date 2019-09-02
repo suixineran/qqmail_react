@@ -2,10 +2,12 @@ import React, { Component } from 'react'
 import TodoApi from "../api/mail";
 import List from "../common/List"
 import TopButton from "../common/TopButtons";
+import { Link } from 'react-router-dom'
 import MailMenu from "../common/MailMenu";
-import {Link} from "react-router-dom";
 const log = console.log.bind(console)
-class Lajixiang extends Component {
+
+
+class ListMail extends Component {
     constructor(props) {
         super(props)
         this.api = new TodoApi()
@@ -21,7 +23,7 @@ class Lajixiang extends Component {
     componentDidMount() {
         this.api.sjx((r) => {
             let mails = r
-            // log('后台数据',mails)
+            log('后台数据',mails)
             this.setState({
                 mails,
             })
@@ -30,8 +32,8 @@ class Lajixiang extends Component {
 
     selectedmail(record, selected) {
         let ids = this.state.ids
-        // console.log('record', record.id)
-        // console.log('selected', selected)
+        console.log('record', record.id)
+        console.log('selected', selected)
         if (selected) {
             ids.push(record.id)
             this.setState({
@@ -101,11 +103,11 @@ class Lajixiang extends Component {
                 <TopButton ids={this.state.ids} />
                 {/*<TopButton  />*/}
                 <List selectedmail={this.selectedmail}  columns={columns}
-                      data={mails.filter(e => e.type === "shanchu")}
+                      data={mails.filter(e => e.type === "shoujianxiang")}
                 />
             </div>
         )
     }
 }
 
-export default Lajixiang
+export default ListMail

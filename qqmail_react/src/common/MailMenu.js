@@ -6,43 +6,44 @@ class MailMenu extends Component {
         let menus = [
             {
                 text: '欢迎界面',
-                url: '/shouye',
+                url: '/hello',
             },
+            {
+                text: '收件箱',
+                url: '/sjx',
+            },
+
             {
                 text: '写信',
                 url: '/write',
             },
-            ,
             {
                 text: '发件箱',
                 url: '/fjx',
-            }
-            ,
-            {
-                text: '收件箱',
-                url: '/sjx',
-            }
-            ,
+            },
+
             {
                 text: '垃圾箱',
                 url: '/ljx',
-            }
-            ,
+            },
             {
                 text: '通讯录',
                 url: '/addresslist',
-            }
+            },
+            {
+                text: '返回',
+                url: '/',
+            },
         ]
         return (
             <div>
+
             <nav>
                 {
-                    menus.map((e, index) =>
-                        <a><Link to={e.url} key={index}>{e.text}</Link> <span/><span/></a>
-
+                    menus.map((e) =>
+                       <Link to={e.url} key={e.url}>{e.text}    </Link>
                     )
                 }
-
             </nav>
 
 

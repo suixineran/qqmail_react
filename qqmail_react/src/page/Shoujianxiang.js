@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
 import TodoApi from "../api/mail";
 import List from "../common/List"
-import Button from "../common/Buttons";
+import TopButton from "../common/TopButtons";
 import { Link } from 'react-router-dom'
+import MailMenu from "../common/MailMenu";
+const log = console.log.bind(console)
 
 
 class Shoujianxiang extends Component {
@@ -14,7 +16,6 @@ class Shoujianxiang extends Component {
             data: [],
             ids:[]
         }
-        this.processData = this.processData.bind(this)
         this.selectedmail = this.selectedmail.bind(this)
 
     }
@@ -22,30 +23,11 @@ class Shoujianxiang extends Component {
     componentDidMount() {
         this.api.sjx((r) => {
             let mails = r
-            let data = this.processData(mails)
+            // log('后台数据',mails)
             this.setState({
                 mails,
-                data,
             })
         })
-    }
-
-    processData (a) {
-        let d = []
-        let state = a
-        for (let i = 0; i < state.length; i++) {
-            let se = state[i]
-            let o = {}
-            o.addresser = se.addresser
-            o.mailSubject = se.mailSubject
-            o.time = se.time
-            o.key = i + 1
-            o.id = se.id
-
-            d.push(o)
-        }
-        return d
-
     }
 
     selectedmail(record, selected) {
@@ -70,54 +52,59 @@ class Shoujianxiang extends Component {
 
 
     render() {
-
-        let ids = this.state.ids
-        console.log('idss', ids)
-
-        var columns = [{
-            title: '发件人',
-            dataIndex: 'addresser',
-            render: function(text, record, index ) {
-                let id = record.id
-                let url = `/sjx/${id}`
-                return (
-                    <div>
-                        <Link  to={{pathname: url,}}> {text} </Link>
-                    </div>
-                )
+        let mails = this.state.mails
+        var columns = [
+            {
+                title: '发件人',
+                dataIndex: 'addresser',
+                render: function(text, record, index ) {
+                    let id = record.id
+                    let url = `/sjx/${id}`
+                    return (
+                        <div>
+                            <Link  to={{pathname: url,}}> {text} </Link>
+                        </div>
+                    )
+                }
+            },
+            {
+                title: '主题',
+                dataIndex: 'mailSubject',
+                render: function(text, record, index ) {
+                    let id = record.id
+                    let url = `/sjx/${id}`
+                    return (
+                        <div>
+                            <Link  to={{pathname: url,}}> {text} </Link>
+                        </div>
+                    )
+                }
+            },
+            {
+                title: '时间',
+                dataIndex: 'time',
+                render: function(text, record, index ) {
+                    let id = record.id
+                    let url = `/sjx/${id}`
+                    return (
+                        <div>
+                            <Link  to={{pathname: url,}}> {text} </Link>
+                        </div>
+                    )
+                }
             }
-        }, {
-            title: '主题',
-            dataIndex: 'mailSubject',
-            render: function(text, record, index ) {
-                let id = record.id
-                let url = `/sjx/${id}`
-                return (
-                    <div>
-                        <Link  to={{pathname: url,}}> {text} </Link>
-                    </div>
-                )
-            }
-        }, {
-            title: '时间',
-            dataIndex: 'time',
-            render: function(text, record, index ) {
-                let id = record.id
-                let url = `/sjx/${id}`
-                return (
-                    <div>
-                        <Link  to={{pathname: url,}}> {text} </Link>
-                    </div>
-                )
-            }
-        }];
-
+        ];
 
         return (
             <div>
+                <MailMenu />
+
                 <div> 收件箱 </div>
-                <Button ids={ids} />
-                <List selectedmail={this.selectedmail}  columns ={columns}  data = {this.state.data} />
+                <TopButton ids={this.state.ids} />
+
+                <List selectedmail={this.selectedmail}  columns={columns}
+                      data={mails.filter(e => e.type === "shoujianxiang")}
+                />
             </div>
         )
     }

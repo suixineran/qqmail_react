@@ -6,7 +6,8 @@ class Home extends Component {
         return (
             <div>
                 <MailMenu />
-                点击上面的链接
+                <h1>react实现的邮箱功能</h1>
+                <h2>点击上面链接查看效果</h2>
             </div>
         )
     }

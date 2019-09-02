@@ -13,6 +13,9 @@ const ajax = function(method, path, data, callback) {
     r.send(data)
 }
 
+const log = console.log.bind(console)
+
 export {
-    ajax
+    ajax,
+    log
 }

@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 // import  { Button } from 'antd'
 import 'antd/dist/antd.css'
-import TodoApi from "../api/mail";
+import TodoApi from "../api/mail"
+import { Link } from 'react-router-dom'
+import MailMenu from "./MailMenu";
 
 
-class Buttons extends Component {
+class TopButtons extends Component {
     constructor(props) {
         super(props)
         this.api = new TodoApi()
@@ -33,11 +35,15 @@ class Buttons extends Component {
     }
 
     render() {
-        console.log('ids-------button',this.props.ids)
-
+        // console.log('ids-------button',this.props.ids)
+        let url = '/'
         return (
             <div>
-                <a href="/shouye" className="ant-btn" role="button">返回</a>
+                <Link  to={{
+                    pathname: url,
+                } }
+                >  <button className="ant-btn" role="button">返回</button></Link>
+
                 <a href="javascript:;" className="ant-btn" role="button"  onClick={this.deletemail }>删除</a>
                 <a href="javascript:;" className="ant-btn" role="button">转发</a>
                 <a href="javascript:;" className="ant-btn" role="button">举报</a>
@@ -49,4 +55,4 @@ class Buttons extends Component {
     }
 }
 
-export default Buttons
+export default TopButtons
