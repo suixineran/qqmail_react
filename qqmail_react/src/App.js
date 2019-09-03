@@ -42,7 +42,7 @@ class App extends Component {
                                     <Route exact path="/addmail" component={Succe} />
                                     <Route path="/sjx/:id" component={Detail} />
                                     <Route path="/sjxdelete/:id" component={Detail} />
-                                    <Route path="/delete/:id'" component={Detail} />
+                                    <Route path="/delete/:id" component={Detail} />
 
                                     <Route exact path="/addresslist/add" component={AddressAdd} />
                                     <Route  path="/addresslist/updata/:id" component={AddressUpdate} />
@@ -55,9 +55,9 @@ class App extends Component {
                             {/*<NextLeft/>*/}
                         </div>
 
-                        </div>
                     </div>
                 </div>
+            </div>
 
         )
     }
