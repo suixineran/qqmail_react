@@ -1,0 +1,177 @@
+连鹏举
+sql
+索引
+
+连接器   控制用户的连接
+分析器   词法分析 语法分析
+优化器
+执行器  sql语句的实际执行
+存储引擎 innodb  myisam memory
+数据文件 放到不同的位置
+
+聚簇索引 非聚簇索引
+数据仓库
+数据库
+.frm 元数据文件 表结构
+.opt  数据的描述文件
+
+mysiam 是数据和索引是单独存放的
+
+.myd
+.myi
+哈希表  
+
+多叉树
+二叉树
+AVL树 平衡树  最高子树 和最低子树 不能超过1
+红黑树
+
+左旋 右旋
+https://myusf.usfca.edu/casa
+https://visualgo.net/en
+
+
+多叉树
+b +树  叶子节点 非叶子节点
+局部性原理、
+叶子节点放数据  非叶子节点 放key
+
+索引的工作
+存储引擎
+
+回表 普通列、主键列
+
+索引的分类  维护
+主键索引
+唯一索引
+普通索引
+全文索引
+组合索引
+
+自增id 自增锁
+共享锁、排他锁
+分页
+性能损耗
+主键的自增 
+
+约束  普通索引 会产生回表 很多考量
+
+
+覆盖索引
+全文索引  myisoym 倒排索引 索引引擎
+myisam 支持  innodb  es solr
+组合索引
+最左匹配原则
+索引下推
+mysql 回表
+mysql 存储引擎
+行锁
+索引维护
+页分裂 页合并
+
+连接 分析 优化 执行
+查询缓存
+执行计划
+mysql 的基本架构图
+长连接、短连接
+rBO 基于规则的优化
+cBO基于成本的优化
+
+
+日志
+ib_logfile0
+服务端、存储引擎
+事务 acid 原子性、一致性、隔离性
+redo日志
+write ahead log
+innodb engine
+redolog buffer  undo log buffer
+内核 用户空间 操作系统 kernel  osbuffer  fsync()
+内存和
+
+buffer pool  
+log  buffer
+os buffer
+log files
+crash-safe
+undo 回滚日志
+
+
+binlog 日志文件
+逻辑日志
+
+mysql 执行计划
+
+spring
+jsp servlet javabean
+mvc 三层架构
+
+contral
+ser
+dao
+
+ssh
+sms
+springBoot 
+
+
+
+ioc 控制反转
+aop 面向切面编程
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
